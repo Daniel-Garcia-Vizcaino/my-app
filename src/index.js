@@ -83,7 +83,7 @@ import './index.css';
       const moves = history.map((step, move) => {
         const desc = move ? 'Go to move number ' + move : 'Start again';
         return (
-          <li>
+          <li key={move}>
             <button onClick = { () => this.jumpTo(move) } >{desc}</button>
           </li>
         );
