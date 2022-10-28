@@ -13,6 +13,12 @@ import './index.css';
       );
     }
   
+  function Header() {
+    return (
+      <h1>tic-tac-toe</h1>
+    )
+  }
+
   class Board extends React.Component {
 
     renderSquare(i) {
@@ -105,16 +111,19 @@ import './index.css';
         status = 'Next player: ' + (this.state.xIsNext ? 'X' : 'O');
       }
       return (
-        <div className="game">
-          <div className="game-board">
-            <Board 
-              squares = {current.squares}
-              onClick = { (i) => this.handleClick(i) }
-            />
-          </div>
-          <div className="game-info">
-            <div>{status}</div>
-            <ol>{moves}</ol>
+        <div className='container'>
+          <Header />
+          <div className="game">
+            <div className="game-board">
+              <Board 
+                squares = {current.squares}
+                onClick = { (i) => this.handleClick(i) }
+              />
+            </div>
+            <div className="game-info">
+              <div>{status}</div>
+              <ol>{moves}</ol>
+            </div>
           </div>
         </div>
       );
