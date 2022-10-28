@@ -1,6 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
+import 'bootstrap/dist/css/bootstrap.css';
+
 
     function Square(props) {
       return (
@@ -112,18 +114,22 @@ import './index.css';
       }
       return (
         <div className='container'>
+          <div className='row'>
           <Header />
-          <div className="game">
-            <div className="game-board">
+          </div>
+          <div className='row'>
+            <div>{status}</div>
+          </div>
+          <div className='row'>
+            <div className='col'>
               <Board 
                 squares = {current.squares}
                 onClick = { (i) => this.handleClick(i) }
               />
             </div>
-            <div className="game-info">
-              <div>{status}</div>
+            <div className='col'>  
               <ol>{moves}</ol>
-            </div>
+            </div>  
           </div>
         </div>
       );
