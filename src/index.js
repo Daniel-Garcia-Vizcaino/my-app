@@ -113,22 +113,32 @@ import 'bootstrap/dist/css/bootstrap.css';
         status = 'Next player: ' + (this.state.xIsNext ? 'X' : 'O');
       }
       return (
-        <div className='container'>
+        <div className='container-fluid '>
           <div className='row'>
-          <Header />
+            <div className='col text-center'>
+             <Header />
+            </div> 
           </div>
           <div className='row'>
-            <div>{status}</div>
+            <div className='col mb-5 text-center'>
+              <div>{status}</div>
+            </div>
           </div>
           <div className='row'>
-            <div className='col'>
+            <div className='col-2'>
+
+            </div>
+            <div className='col-4'>
               <Board 
                 squares = {current.squares}
                 onClick = { (i) => this.handleClick(i) }
               />
             </div>
-            <div className='col'>  
+            <div className='col-4'>  
               <ol>{moves}</ol>
+            </div>
+            <div className='col-2'>
+            
             </div>  
           </div>
         </div>
