@@ -21,6 +21,10 @@ import 'bootstrap/dist/css/bootstrap.css';
     )
   }
 
+  function Footer() {
+      return (<h2 className='foot'>Thanks for playing!</h2>)
+  }
+
   class Board extends React.Component {
 
     renderSquare(i) {
@@ -140,6 +144,11 @@ import 'bootstrap/dist/css/bootstrap.css';
             <div className='col-2'>
             
             </div>  
+          </div>
+          <div className='row'>
+            <div className='col text-center'>
+              {winner && <Footer />}
+            </div>    
           </div>
         </div>
       );
