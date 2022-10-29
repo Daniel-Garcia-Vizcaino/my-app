@@ -17,7 +17,7 @@ import 'bootstrap/dist/css/bootstrap.css';
   
   function Header() {
     return (
-      <h1>tic-tac-toe</h1>
+      <h1>Tic-tAc-toE</h1>
     )
   }
 
@@ -113,7 +113,7 @@ import 'bootstrap/dist/css/bootstrap.css';
         status = 'Next player: ' + (this.state.xIsNext ? 'X' : 'O');
       }
       return (
-        <div className='container-fluid '>
+        <div className='container-fluid bg-secondary bigCont'>
           <div className='row'>
             <div className='col text-center'>
              <Header />
