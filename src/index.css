@@ -18,7 +18,7 @@ body {
   }
   
   .square {
-    background: #fff;
+    background: rgb(210, 185, 185);
     border: 1px solid #999;
     float: left;
     font-size: 90px;
@@ -51,4 +51,17 @@ body {
 
   .bigCont {
     height:100vh;
+    background: linear-gradient(70deg, blue, pink);
+  }
+
+  .moveBtn {
+    background-color: rgb(210, 185, 185);
+  }
+
+  .movesOl {
+    list-style-type: upper-roman;
+  }
+
+  li {
+    margin: 5px;
   }

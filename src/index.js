@@ -101,7 +101,7 @@ import 'bootstrap/dist/css/bootstrap.css';
         const desc = move ? 'Go to move number ' + move : 'Start again';
         return (
           <li key={move}>
-            <button onClick = { () => this.jumpTo(move) } >{desc}</button>
+            <button className='moveBtn' onClick = { () => this.jumpTo(move) } >{desc}</button>
           </li>
         );
       });
@@ -113,7 +113,7 @@ import 'bootstrap/dist/css/bootstrap.css';
         status = 'Next player: ' + (this.state.xIsNext ? 'X' : 'O');
       }
       return (
-        <div className='container-fluid bg-secondary bigCont'>
+        <div className='container-fluid bigCont'>
           <div className='row'>
             <div className='col text-center'>
              <Header />
@@ -135,7 +135,7 @@ import 'bootstrap/dist/css/bootstrap.css';
               />
             </div>
             <div className='col-4'>  
-              <ol>{moves}</ol>
+              <ol className='movesOl'>{moves}</ol>
             </div>
             <div className='col-2'>
             
