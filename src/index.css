@@ -69,3 +69,7 @@ body {
   .foot {
     margin-top: 10%;
     }
+
+  .statusRow {
+    margin: 25px 0px 20px 0px;
+  }

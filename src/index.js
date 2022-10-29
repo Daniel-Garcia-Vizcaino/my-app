@@ -123,8 +123,8 @@ import 'bootstrap/dist/css/bootstrap.css';
              <Header />
             </div> 
           </div>
-          <div className='row'>
-            <div className='col mb-5 text-center'>
+          <div className='row statusRow'>
+            <div className='col text-center statusCol'>
               <div>{status}</div>
             </div>
           </div>
